@@ -1,1 +1,14 @@
 $bg-color: orange;
+
+#title-div {
+    text-align: center;
+    background-color: $bg-color;
+    width: 100%;
+}
+
+#main-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+

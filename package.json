@@ -14,12 +14,15 @@
     "@types/express-graphql": "^0.9.0",
     "@types/graphql": "^14.5.0",
     "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.5.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",
     "nodemon": "^2.0.14",
     "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
     "typescript": "^4.4.4",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1",
@@ -29,6 +32,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-graphql": "^0.12.0",
-    "graphql": "^15.7.2"
+    "graphql": "^15.7.2",
+    "jquery": "^3.6.0"
   }
 }

@@ -1,0 +1,11 @@
+#title-div {
+  text-align: center;
+  background-color: orange;
+  width: 100%;
+}
+
+#main-title {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}

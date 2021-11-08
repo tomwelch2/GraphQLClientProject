@@ -1,8 +1,8 @@
 import path from "path";
 import express from "express";
 import { graphqlHTTP } from "express-graphql";
-import EmployeeSchema from "./GraphQL/EmployeeSchema";
-require("dotenv").config({ path: path.join(__dirname, "../", ".env") });
+import EmployeeSchema from "./EmployeeSchema";
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
 
 //Creating Express Router ---
@@ -13,8 +13,7 @@ router.use(express.urlencoded({ extended: true }));
 router.use("/graphql", graphqlHTTP({
     schema: EmployeeSchema,
     graphiql: true,
-    
-}))
+}));
 
 
 

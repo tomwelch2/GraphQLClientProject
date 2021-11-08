@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var express_1 = __importDefault(require("express"));
 var express_graphql_1 = require("express-graphql");
-var EmployeeSchema_1 = __importDefault(require("./GraphQL/EmployeeSchema"));
-require("dotenv").config({ path: path_1.default.join(__dirname, "../", ".env") });
+var EmployeeSchema_1 = __importDefault(require("./EmployeeSchema"));
+require("dotenv").config({ path: path_1.default.resolve(__dirname, ".env") });
 //Creating Express Router ---
 var router = express_1.default.Router();
 router.use(express_1.default.json());

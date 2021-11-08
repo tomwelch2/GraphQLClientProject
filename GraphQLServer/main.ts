@@ -1,6 +1,6 @@
 import path from "path"
 import express from "express";
-require("dotenv").config({ path: path.join(__dirname, "../", ".env") });
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 import routes from "./routes";
 
 let HOST: any = process.env.API_HOST;
