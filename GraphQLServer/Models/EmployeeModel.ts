@@ -1,4 +1,5 @@
 type Employee = {
+    index: number,
     EmpId: number,
     Name: string,
     Salary: number,

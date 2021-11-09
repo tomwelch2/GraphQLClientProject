@@ -2,9 +2,9 @@ FROM node:latest
 
 WORKDIR /src
 
-COPY GraphQL Models main.js routes.js .env /src/
+COPY ./ /src/
 
-RUN npm i dotenv express express-graphql graphql
+RUN npm i dotenv express express-graphql graphql pg
 
 EXPOSE 5050
 
