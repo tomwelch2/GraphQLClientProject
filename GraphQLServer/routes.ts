@@ -25,7 +25,6 @@ let EmployeeRoot = {
         client.connect();
 
         let data = await client.query(`SELECT * FROM "Employees" WHERE "Name" = '${args.Name}'`);
-        console.log(data.rows)
         return data.rows[0];
     }
 };
@@ -38,8 +37,9 @@ router.use("/graphql", graphqlHTTP({
     rootValue: EmployeeRoot
 }));
 
-router.get("/", (req, res) => {
-    res.json({ hello: "world" })
+router.post("/query", (req, res) => {
+    console.log(req.body);
+    res.json({ endpoint: "Returned values" })
 })
 
 

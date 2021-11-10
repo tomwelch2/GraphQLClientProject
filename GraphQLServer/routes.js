@@ -64,7 +64,6 @@ var EmployeeRoot = {
                     return [4 /*yield*/, client.query("SELECT * FROM \"Employees\" WHERE \"Name\" = '" + args.Name + "'")];
                 case 1:
                     data = _a.sent();
-                    console.log(data.rows);
                     return [2 /*return*/, data.rows[0]];
             }
         });
@@ -77,8 +76,9 @@ router.use("/graphql", (0, express_graphql_1.graphqlHTTP)({
     graphiql: true,
     rootValue: EmployeeRoot
 }));
-router.get("/", function (req, res) {
-    res.json({ hello: "world" });
+router.post("/query", function (req, res) {
+    console.log(req.body);
+    res.json({ endpoint: "Returned values" });
 });
 exports.default = router;
 

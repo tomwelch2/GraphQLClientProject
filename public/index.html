@@ -19,21 +19,21 @@
     </div>
 
     <div id="form-div">
-        <form action="http://graphqlserver:5050/query" method="get" id="entry-form">
+        <form action="http://0.0.0.0:5050/query" method="post" id="entry-form">
             <div id="query-type-input" class="form-group">
                 <label for="query-type">Query Type</label>
-                <input data-role="input" type="text" id="query-type" name="query-type">
+                <input data-role="input" type="text" id="query-type" name="queryType">
             </div>
             <div id="emp-id-input">
                 <label for="emp-id">Employee ID</label>
-                <input type="number" data-role="input" id="emp-id" name="emp-id">
+                <input type="number" data-role="input" id="emp-id" name="empId">
             </div>
             <div id="attrs-input" class="form-group">
                 <label for="attrs">Attributes</label>
                 <input id="attrs" type="text" data-role="taginput" name="attrs">
             </div>
             <div id="submit-button" class="form-group">
-                <input id="submit-query" type="submit" value="Query">
+                <input id="submitQuery" name="submitQuery" type="submit" value="Query">
             </div>
         </form>
     </div>
