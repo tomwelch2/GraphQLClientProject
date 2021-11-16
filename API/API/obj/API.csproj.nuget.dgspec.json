@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thomaswelch2/Documents/GraphQLClient/API/API.csproj": {}
+    "/Users/thomaswelch2/Documents/GraphQLClient/API/API/API.csproj": {}
   },
   "projects": {
-    "/Users/thomaswelch2/Documents/GraphQLClient/API/API.csproj": {
+    "/Users/thomaswelch2/Documents/GraphQLClient/API/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thomaswelch2/Documents/GraphQLClient/API/API.csproj",
+        "projectUniqueName": "/Users/thomaswelch2/Documents/GraphQLClient/API/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/thomaswelch2/Documents/GraphQLClient/API/API.csproj",
+        "projectPath": "/Users/thomaswelch2/Documents/GraphQLClient/API/API/API.csproj",
         "packagesPath": "/Users/thomaswelch2/.nuget/packages/",
-        "outputPath": "/Users/thomaswelch2/Documents/GraphQLClient/API/obj/",
+        "outputPath": "/Users/thomaswelch2/Documents/GraphQLClient/API/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/thomaswelch2/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,32 +35,26 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "GraphQL.Client": {
+            "Microsoft.AspNetCore.Identity": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[2.2.0, )"
             },
-            "GraphQL.Client.Serializer.Newtonsoft": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[4.0.1, )"
+              "version": "[3.1.21, )"
             },
-            "Hangfire.AspNetCore": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[1.7.27, )"
+              "version": "[3.1.21, )"
             },
-            "Hangfire.Core": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.7.27, )"
-            },
-            "Hangfire.MemoryStorage": {
-              "target": "Package",
-              "version": "[1.7.0, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[3.1.18, )"
             }
           },
           "imports": [
